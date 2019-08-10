@@ -1,0 +1,8 @@
+
+<app-queuelist  [list] ="list" ></app-queuelist><div *ngIf="isAddQueue">
+  <p *ngIf="error"> Name and Size should not be empty</p>
+  Name :&nbsp;&nbsp;<input type="text" [(ngModel)] = "name">
+  Size :&nbsp;&nbsp;<input type="text" [(ngModel)] = "size">
+  &nbsp;&nbsp;<button (click) = "add()">Submit</button>
+<br><br><br>
+</div>

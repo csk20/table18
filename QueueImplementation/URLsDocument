@@ -1,0 +1,45 @@
+
+
+Queue Services
+-----------------------------------------------
+http://localhost:8080/queue/addqueue  (POST)
+
+{
+"queueName":"queue2",
+"size":200
+}
+
+http://localhost:8080/queue/isqueuefull/1  (POST)
+
+http://localhost:8080/queue/isqueueempty/1  (POST)
+
+
+
+http://localhost:8080/queue/deletequeue/1 (POST)
+
+http://localhost:8080/queue/addqueueandgetall  (POST)
+
+{
+"queueName":"queue2",
+"size":200
+}
+
+http://localhost:8080/queue/checkqueuesize  (GET)
+
+Messages Services
+-----------------------------------------------
+localhost:8080/message/add (POST)
+{
+	
+	
+	"msgBody": "message9"
+}
+
+localhost:8080/message/add/getAll (POST)
+{
+	
+	
+	"msgBody": "message9"
+}
+
+
